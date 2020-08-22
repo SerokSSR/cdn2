@@ -39,7 +39,7 @@ loadMeting = function() {
     }
     aplayers = [];
     for (var r = document.querySelectorAll(".aplayer"), s = 0; s < r.length; s++) { (function() {
-            document.querySelector(".aplayer-icon-lrc").click(); // modified here
+            r.lrc().hide(); // modified here
             var e = r[s];
             if (e.classList.contains("no-reload")) return "continue";
             if (e.classList.contains("no-destroy") && e.classList.add("no-reload"), e.dataset.id) {
