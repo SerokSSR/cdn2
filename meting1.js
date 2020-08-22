@@ -39,8 +39,8 @@ loadMeting = function() {
     }
     aplayers = [];
     for (var r = document.querySelectorAll(".aplayer"), s = 0; s < r.length; s++) { (function() {
-            r.lrc().hide(); // modified here
             var e = r[s];
+            e.lrc().hide(); // modified here
             if (e.classList.contains("no-reload")) return "continue";
             if (e.classList.contains("no-destroy") && e.classList.add("no-reload"), e.dataset.id) {
                 var n = e.dataset.api || t;
